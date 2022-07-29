@@ -10,6 +10,7 @@
 }
 
 .Navigation {
+    border-bottom: 10px solid black;
     z-index: 2;
     display: block;
     background-color: #ff9933;

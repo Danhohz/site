@@ -7,7 +7,7 @@ export default function Colors() {
     let elements = colors.map(e => (<div key={e} style={{backgroundColor: e}} className={styles.color}>{e}</div>))
 
     return (
-        <div>
+        <div className={styles.colorsContainer}>
             {elements}
         </div>
     )
