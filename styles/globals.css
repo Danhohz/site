@@ -1,9 +1,65 @@
-html,
-body {
+@font-face {
+  font-family: Roboto;
+  src:
+    url("./fonts/Roboto/roboto-black-webfont.woff2") format("woff2"),
+    url("./fonts/Roboto/roboto-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: EduVICWANTBeginner;
+  src: url("./fonts/EduVICWANTBeginner.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  animation-name: appear;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+*:focus {
+  /* outline: 3px solid white; */
+  
+  border-radius: 5px;
+}
+
+:root {
+  --primary-front: white;
+  --primary-back: #ffb1e3;
+
+  font-size: 10px;
+
+  /* animation-name: background-color-transition;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+}
+
+html,
+body {
+  color: var(--primary-front);
+  background-color: var(--primary-back);
+  padding: 0;
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
 a {
@@ -11,6 +67,24 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes background-color-transition {
+  from {
+    background-color: var(--primary-back);
+  }
+
+  to {
+    background-color: var(--primary-back-2);
+  }
 }

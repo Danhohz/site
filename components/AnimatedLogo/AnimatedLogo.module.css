@@ -1,0 +1,15 @@
+.logoContainer {
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+    /* background: #ff03a44F; */
+    min-height: 400px;
+}
+
+.Sun {
+    width: 60vw;
+    height: 60vw;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: 0 auto;
+}
