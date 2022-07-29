@@ -37,6 +37,7 @@ export default function Navigation() {
             console.log('resize');
             if (window.innerWidth > navBreakPoint)
                 navRef.current.style.transform = '';
+                navRef.current.style.transition = '';
         })
     }, []);
 
@@ -45,6 +46,7 @@ export default function Navigation() {
         // navRef.transition = 'all .5s';
         // console.log(shown);
         if (window.innerWidth <= navBreakPoint) {
+            navRef.current.style.transition = 'transform .5s';
             // console.log(window.innerWidth);
             if (shown) {
                 navRef.current.style.transform = 'translate(0, 0)';
@@ -82,3 +84,4 @@ function NavIcon() {
         <svg className={styles.NavIcon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.58 22.63"><g id="Layer_2" data-name="Layer 2"><g id="Header"><g class="cls-1"><rect class="cls-2" width="28.58" height="4.88" rx="2.44"/><rect class="cls-2" y="8.88" width="28.58" height="4.88" rx="2.44"/><rect class="cls-2" y="17.75" width="28.58" height="4.88" rx="2.44"/></g></g></g></svg>
     )
 }
+

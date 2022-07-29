@@ -32,7 +32,7 @@
 
 :root {
   --primary-front: white;
-  --primary-back: #ffb1e3;
+  --primary-back: #993399;
 
   font-size: 10px;
 
@@ -49,10 +49,10 @@ body {
   padding: 0;
   margin: 0;
   font-family:
+    Roboto,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    Roboto,
     Oxygen,
     Ubuntu,
     Cantarell,
